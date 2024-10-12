@@ -113,18 +113,23 @@ def initGame():
     pygame.init()
     game_sounds = {}
     for key, value in cfg.AUDIO_PATHS.items():
-        if key == 'bgm': continue
-        game_sounds[key] =pygame.mixer.Sound(value)
-
+        if key == 'bgm': 
+            continue  # Skip background music for now
+        try:
+            game_sounds[key] = pygame.mixer.Sound(value)
+        except FileNotFoundError:
+            print(f"Warning: Sound file {value} not found.")
+            game_sounds[key] = None  # Handle missing sounds gracefully
     return game_sounds
 
 def main():
+
     game_sounds = initGame()
     pygame.mixer.init()
     pygame.mixer.music.load(cfg.AUDIO_PATHS['bgm'])
     pygame.mixer.music.set_volume(0.9)
     pygame.mixer.music.play(-1, 0.0)
-   
+    
     screen = pygame.display.set_mode(cfg.SCREENSIZE)
     pygame.display.set_caption('Skier Game')
 
@@ -187,7 +192,6 @@ def main():
         
         updateFrame(screen, obstacles, skier, score)
         clock.tick(cfg.FPS)
-
-
-if __name__=='__main__':
+      
+if __name__ == "__main__":
     main()

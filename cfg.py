@@ -13,7 +13,8 @@ SKIER_IMAGE_PATHS = [
 
 OBSTACLE_PATHS = {
     'tree': os.path.join(os.getcwd(), 'Skier/resources/images/tree.png'),
-    'flag': os.path.join(os.getcwd(), 'Skier/resources/images/flag.png')
+    'flag': os.path.join(os.getcwd(), 'Skier/resources/images/flag.png'),
+    'rock': os.path.join(os.getcwd(), 'Skier/resources/images/rock.png')
 }
 
 AUDIO_PATHS = {
@@ -24,4 +25,6 @@ AUDIO_PATHS = {
 
 #BGMPATH = os.path.join(os.getcwd(), 'Skier/resources/music/bgm.mp3')
 #FLAGBGM = os.path.join(os.getcwd(), 'Skier/resources/music/get.wav')
+
+ICON = os.path.join(os.getcwd(),  'Skier/resources/images/logo.webp')
 FONTPATH = os.path.join(os.getcwd(), 'Skier/resources/font/FZSTK.TTF')

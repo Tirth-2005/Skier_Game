@@ -2,5 +2,5 @@
 ## •	Simulated realistic physics and controls for an authentic skiing experience
 ## •	Introduced power-ups and bonuses to increase gameplay variety and excitement
 
-### Skier
+# Skier
 <img src="https://github.com/Tirth-2005/Skier_Game/blob/master/resources/images/s1.png" />

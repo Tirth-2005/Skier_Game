@@ -7,3 +7,7 @@
 
 
 <img src="https://github.com/Tirth-2005/Skier_Game/blob/master/resources/images/s2.png" />
+
+
+
+(You can ADD more Obstacles like rocks you can find it in resources..)
